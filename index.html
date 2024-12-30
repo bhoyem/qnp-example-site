@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample Form Email Site</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="https://kit.fontawesome.com/b8a2ae3b48.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- ************************** Header Section **************************** -->
+  <header>
+    <div class="content-wrapper">
+      <div class="header-top">
+        <h1>Header Section</h1>
+        <nav>
+          <ul>
+            <li>The Process</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ******************************* Process Section ****************************** -->
+  <div id="process-section">
+    <div class="content-wrapper">
+
+      <div id="process-content">
+        <h2>Process Section</h2>
+
+        <p>Just give us some basic information.</p>
+        <form id="process-inputs-div" class="process-inputs" onsubmit="return false">
+          <label for="process-name">Name:</label>
+          <input type="text" id="process-name" maxlength="50" placeholder="*Name" class="process-input-fields">
+          <label for="process-email">Email:</label>
+          <input type="text" id="process-email" maxlength="50" placeholder="*Email" class="process-input-fields">
+          <label for="process-phone">Phone:</label>
+          <input type="text" id="process-phone" maxlength="50" placeholder="*Phone" class="process-input-fields">
+          <label for="process-address">Address:</label>
+          <input type="text" id="process-address" maxlength="150" placeholder="*Property Address"
+            class="process-input-fields">
+          <label for="process-textarea">Additional information:</label>
+          <textarea id="process-textarea" class="process-input-fields"
+            placeholder="Please include any important information."></textarea>
+          <input id="process-button" type="submit" value="Submit" onclick="processThankYou()">
+        </form>
+        <!-- </div> -->
+        <div id="process-submission-thanks" class="hidden">
+          <p>Thank you for contacting us! We will be in touch soon!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ************************** About Us Section **************************** -->
+  <div id="aboutus-section">
+    <div class="content-wrapper">
+      <h2>About Us Section</h2>
+      <p>
+        Sample paragraph for the about us section.
+      </p>
+
+    </div>
+  </div>
+
+  <!-- ************************** Footer Section**************************** -->
+  <footer>
+    <div class="content-wrapper">
+      <div class="footer-contact">
+        <h2>Footer Section</h2>
+        <p>Email:
+          <email>contact@sampleemail.com</email>
+        </p>
+        <p>Phone:
+          <phone>555-555-4040</phone>
+        </p>
+      </div>
+      <div class="footer-social">
+        <p><a href="" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a></p>
+        <p><a href="" target="_blank" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
